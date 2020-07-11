@@ -1,15 +1,12 @@
 import styled from "styled-components"
 
-export const NavWrapper = styled.nav`
+export const FooterWrapper = styled.footer`
   grid-column: 2 / span 12;
-  grid-row: 1 / 2;
+  min-height: 11.25rem;
+  padding: 3rem 0;
   display: flex;
-  align-items: center;
-
-  & img {
-    height: 64px;
-    width: 64px;
-  }
+  justify-content: center;
+  align-items: flex-start;
 
   @media ${props => props.theme.breakpoints.tablet} {
     grid-column: 2 / span 6;
@@ -25,6 +22,7 @@ export const FooterSocialWrapper = styled.div`
   & p {
     text-align: center;
     flex: 0 0 100%;
+    color: lightgray;
   }
 `
 
@@ -33,6 +31,7 @@ export const FooterSocialIcons = styled.div`
   margin-bottom: 2rem;
 
   & img {
+    height: 22px;
     padding: 0 1rem;
     transition: filter 0.3s ease;
   }
