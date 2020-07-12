@@ -1,21 +1,20 @@
-import React from "react";
-import {useStaticQuery, Link, graphql} from "gatsby";
-import {NavWrapper} from "./../elements";
+import React from "react"
+import { useStaticQuery, Link, graphql } from "gatsby"
+import { NavWrapper } from "./../elements"
 
 export const Nav = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            logo: file(relativePath: {eq: "dog.svg"}) {
-                publicURL
-            }
-        }
-    `)
-    return (
-
-        <NavWrapper>
-            <Link to="/">
-                <img src={data.logo.publicURL} alt="My Logo" />
-            </Link>
-        </NavWrapper>
-    )
+  const data = useStaticQuery(graphql`
+    query {
+      logo: file(relativePath: { eq: "dog1.svg" }) {
+        publicURL
+      }
+    }
+  `)
+  return (
+    <NavWrapper>
+      <Link to="/">
+        <img src={data.logo.publicURL} alt="My Logo" />
+      </Link>
+    </NavWrapper>
+  )
 }
