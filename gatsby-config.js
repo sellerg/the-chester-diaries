@@ -1,4 +1,12 @@
 module.exports = {
+  siteMetadata: {
+    title: "My Cocker Spaniel Blog",
+    description: "A simple blog about life with a Cocker Spaniel",
+    url: "https://thechesterdiaries.netlify.app",
+    image: "/cover.jpg",
+    instagramUsername: "@chesters_home",
+    author: "Greg Seller",
+  },
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
